@@ -41,6 +41,24 @@
             "height": 1440,
             "id": 6,
             "file_name": "images/6.png"
+        },
+        {
+            "width": 2560,
+            "height": 1440,
+            "id": 7,
+            "file_name": "images/7.png"
+        },
+        {
+            "width": 2560,
+            "height": 1440,
+            "id": 8,
+            "file_name": "images/8.png"
+        },
+        {
+            "width": 2560,
+            "height": 1440,
+            "id": 9,
+            "file_name": "images/9.png"
         }
     ],
     "categories": [
@@ -87,6 +105,18 @@
         {
             "id": 10,
             "name": "start_icon"
+        },
+        {
+            "id": 11,
+            "name": "fish_cast"
+        },
+        {
+            "id": 12,
+            "name": "fish_bite"
+        },
+        {
+            "id": 13,
+            "name": "fish_chance"
         }
     ],
     "annotations": [
@@ -254,6 +284,51 @@
             "ignore": 0,
             "iscrowd": 0,
             "area": 825.8996014729828
+        },
+        {
+            "id": 11,
+            "image_id": 7,
+            "category_id": 11,
+            "segmentation": [],
+            "bbox": [
+                2129.3253629376586,
+                1064.66268146883,
+                102.74978650725917,
+                107.12211784799365
+            ],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 11006.774739086804
+        },
+        {
+            "id": 12,
+            "image_id": 8,
+            "category_id": 12,
+            "segmentation": [],
+            "bbox": [
+                2111.836037574714,
+                1056.1821624299293,
+                129.30540564612667,
+                115.12407251468045
+            ],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 14886.164896144857
+        },
+        {
+            "id": 13,
+            "image_id": 9,
+            "category_id": 13,
+            "segmentation": [],
+            "bbox": [
+                2347.8686167258074,
+                1229.9083415649789,
+                86.68830566493094,
+                93.82734260204676
+            ],
+            "ignore": 0,
+            "iscrowd": 0,
+            "area": 8133.7333552144255
         }
     ],
     "info": {
@@ -262,6 +337,6 @@
         "description": "",
         "contributor": "Label Studio",
         "url": "",
-        "date_created": "2025-11-08 02:02:35.391865"
+        "date_created": "2025-11-09 16:18:31.450961"
     }
 }
