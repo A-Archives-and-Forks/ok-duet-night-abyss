@@ -137,7 +137,6 @@ config = {
         ["src.tasks.AutoCombatTask", "AutoCombatTask"],
         ["src.tasks.AutoMoveTask", "AutoMoveTask"],
         ["src.tasks.AutoAimTask", "AutoAimTask"],
-        ["src.tasks.TestMouseHook", "TestMouseHook"],
         ["src.tasks.ClickDialogTask", "ClickDialogTask"],
     ]
 }
