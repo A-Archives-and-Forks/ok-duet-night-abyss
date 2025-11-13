@@ -139,6 +139,7 @@ config = {
         ["src.tasks.AutoDefence", "AutoDefence"],
         ["src.tasks.AutoExploration", "AutoExploration"],
         ["src.tasks.AutoExcavation", "AutoExcavation"],
+        ["src.tasks.AutoHedge", "AutoHedge"],
         ["ok", "DiagnosisTask"],
     ],
     'trigger_tasks':[
