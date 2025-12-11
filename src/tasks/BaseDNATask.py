@@ -636,6 +636,12 @@ class BaseDNATask(BaseTask):
                     time.sleep(0.1)
                     lalt_pressed = True
                 elif not needs_resync and lalt_pressed and not in_team():
+                    sleep_time = random.choice([
+                        random.uniform(0.02, 0.14),
+                        random.uniform(0.22, 0.40),
+                        random.uniform(0.52, 0.70)
+                    ])
+                    time.sleep(sleep_time)
                     self.log_info("[LAlt保持] 暂停: 检测到不在队伍，暂时释放 LAlt")
                     needs_resync = True
                     send_key_up("lalt")
@@ -668,9 +674,13 @@ class BaseDNATask(BaseTask):
                 check_alt()
 
                 key = random.choice(random_key)
-                down_time = random.uniform(0.02, 0.12)
-                after_sleep = random.uniform(0.08, 0.15)
-                send_key(key, down_time, after_sleep)
+                down_time = random.choice([
+                    random.uniform(0.02, 0.14),
+                    random.uniform(0.22, 0.40),
+                    random.uniform(0.52, 0.70),
+                    random.uniform(0.82, 1.00)
+                ])
+                send_key(key, down_time)
 
                 if self.afk_config.get("鼠标抖动", True):
                     if self.afk_config.get("鼠标抖动锁定在窗口范围", True):
@@ -687,6 +697,9 @@ class BaseDNATask(BaseTask):
 
                     move_x = target_x - current_drift[0]
                     move_y = target_y - current_drift[1]
+
+                    if move_x == 0 and move_y == 0:
+                        move_x = 1
 
                     if move_x != 0 or move_y != 0:
                         self.genshin_interaction.do_move_mouse_relative(move_x, move_y)
